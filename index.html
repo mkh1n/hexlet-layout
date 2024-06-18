@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="schoolBanner">
+    <div class="colorLayer"></div>
+    <img src="./resources/backpack.svg" id="backpack" class="floatingIcon">
+    <img src="./resources/computer.svg" id="computer" class="floatingIcon">
+    <div class="bannerTextBlock">
+      <div class="bannerMainText">
+        Мы знаем, как закончить<br>школу за <span>10 месяцев!</span>
+      </div>
+      <div class="bannerSubText">А потом устроиться на любимую работу</div>
+    </div>
+    <div class="bannerTextBlock">
+      <img src="./resources/arrow1.svg" id="arrow1" class="floatingIcon">
+      <div class="bannerSubText">Хотите также? Приходите учиться в Хекслет!</div>
+      <div class="bannerMainText">
+        <span>До 1 сентября</span> оставьте заявку на любую профессию,<br>а мы подарим классные <span>бонусы</span> для
+        воодушевляющего старта
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary modalButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <img src="./resources/arrow2.svg" id="arrow2" class="floatingIcon">
+      А что подарите?
+    </button>
+  </div>
+
+  <div class="modal fade" id="staticBackdrop" role="dialog">
+    <div class="modal-dialog custom">
+      <!-- '.custom' class added here to do the same -->
+      <div class="modal-content custom">
+        <div class="colorLayer"></div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="modalTextBlock">
+            <div class="modalMainText">Хочу стать разработчиком!</div>
+            <div class="modalSubText">И получить один из трех подарков</div>
+            <div class="modalList">
+              <div class="modalListItem">
+                <img src="./resources/modalImage1.svg" class='modalImage' alt="">
+                <div class="modalListText">
+                  <b>Именной депозит на 20к.</b> Будет доступен после покупки профессии, им можно оплачивать дальнейшее
+                  обучение в Хекслете
+                </div>
+              </div>
+              <div class="modalListItem">
+                <img src="./resources/modalImage2.svg" class='modalImage' alt="">
+                <div class="modalListText">
+                  <b>Консультация с карьерным экспертом в IT.</b> Прояснит вопросы будущего трудоустройства: от поиска
+                  первой работы до развития карьеры
+                </div>
+              </div>
+              <div class="modalListItem">
+                <img src="./resources/modalImage3.svg" class='modalImage' alt="">
+                <div class="modalListText">
+                  <b>Возможность заморозить обучение на 2 месяца.</b> Перерыв, если нужно будет восстановить силы и не
+                  учиться
+                </div>
+              </div>
+            </div>
+            <div id="condition">
+              *Подарок определит сотрудник Хекслета после беседы. Мы уточним ваши намерения, поможем с выбором, а если
+              поймем, что программирование –
+              это не ваше, честно отговорим от обучения
+            </div>
+          </div>
+          <div>
+            <div class="inputWrapper">
+              <label class="inputHolder">
+                <input type="text" placeholder=" ">
+                <span>Имя</span>
+              </label>
+              <label class="inputHolder">
+                <input type="email" placeholder=" ">
+                <span>Электронная почта</span>
+              </label>
+              <label class="inputHolder">
+                <input type="tel" placeholder=" ">
+                <span>Номер телефона</span>
+              </label>
+              <label class="inputHolder">
+                <select class="form-select" required>
+                  <option  value="" selected hidden>&#160;</option>
+                  <option value="frontend">Фронтенд разработка</option>
+                  <option value="backend">Бэкенд разработка</option>
+                  <option value="mobile">Мобильная разработка</option>
+                </select>
+                <span>Хочу на факультет</span>
+
+              </label>
+
+            </div>
+            <button class="btn btn-primary" id="modalButton">
+              <img src="./resources/arrow3.svg" id="arrow13" class="floatingIcon">
+              Жду звонка
+            </button>
+            <div id="agreemnt">
+              Даю согласие на обработку персональных данных, соглашаюсь с <a href="#">«Политикой конфиденциальности» и
+                «Условиями оказания услуг»</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
