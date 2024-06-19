@@ -11,6 +11,11 @@ A static web page built with Bootstrap, featuring a banner and a modal window th
 
 Check out the live demo on GitHub Pages: [Hexlet Layout](https://mkh1n.github.io/hexlet-layout/)
 
+## Screenshots
+
+![Screenshot 1](./1.png)
+![Screenshot 2](./2.png)
+
 ## About
 
 This is a test task completed according to [this technical task](https://hexlet-ru.notion.site/38fd01d380cb43efa94702b5188cfde4).
